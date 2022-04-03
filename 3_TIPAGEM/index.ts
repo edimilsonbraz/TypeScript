@@ -105,3 +105,38 @@ function showId(id: ID) {
 showId(1)
 showId("120")
 showId("123")
+
+//13 - Interface
+interface Point {
+  x: number
+  y: number
+  z: number
+}
+
+function showCoords(obj: Point) {
+  console.log(`X: ${obj.x} Y: ${obj.y} Z ${obj.z}`)
+}
+
+const objcoord: Point = {
+  x: 10,
+  y: 15,
+  z: 20
+}
+showCoords(objcoord)
+
+// 15 - Literal Type
+let test: "testing"
+test = "testing"
+console.log(test)
+
+function showDirection(direction: "left" | "right" | "center") {
+  console.log(`A direção escolhida é ${direction}`)
+}
+showDirection("left")
+showDirection("center")
+//showDirection("top") Não aceita outros valores que não foram declarados
+
+
+//16 Non-null Aseertion Operators 
+const p = document.getElementById('some-p')
+console.log(p!.innerText)
