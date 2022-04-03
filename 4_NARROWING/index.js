@@ -91,23 +91,11 @@ notas
 caso também
 */
 function getReview(nota) {
-    if (nota == 1) {
-        console.log("Nota de avaliação foi 1");
-    }
-    else if (nota == 2) {
-        console.log("Nota de avaliação foi 2");
-    }
-    else if (nota == 3) {
-        console.log("Nota de avaliação foi 3");
-    }
-    else if (nota == 4) {
-        console.log("Nota de avaliação foi 4");
-    }
-    else if (nota == 5) {
-        console.log("Nota de avaliação foi 5");
+    if (!nota) {
+        console.log("Você não avaliou o produto!!!");
     }
     else {
-        console.log("Conteúdo não foi avaliado");
+        console.log(`A nota que voce avaliou foi ${nota}`);
     }
 }
 getReview(4);
